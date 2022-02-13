@@ -36,23 +36,6 @@
 .table-upload-btn {
 	margin: 20px;
 	margin-top: 10px;
-	.ant-btn {
-		box-shadow: none;
-		font-weight: $fw-semibold;
-
-		&:hover svg path,
-		&:focus svg path,
-		&:active svg path {
-			fill: $color-primary;
-		}
-	}
-	svg {
-		vertical-align: middle;
-		margin-right: 5px;
-		path {
-			transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-		}
-	}
 }
 .ant-table-body {
     overflow: auto;
@@ -92,11 +75,6 @@
 .layout-dashboard-rtl {
 	.ant-table table {
 		text-align: right;
-	}
-	.table-upload-btn svg {
-		vertical-align: middle;
-		margin-left: 5px;
-		margin-right: 0;
 	}
 }
 // / Tables

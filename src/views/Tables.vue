@@ -5,18 +5,6 @@
 
 <template>
 	<div>
-		<!-- Authors Table -->
-		<a-row :gutter="24" type="flex">
-			<!-- Authors Table Column -->
-			<a-col :span="24" class="mb-24">
-				<!-- Authors Table Card -->
-				<CardAuthorTable :data="table1Data" :columns="table1Columns"></CardAuthorTable>
-				<!-- / Authors Table Card -->
-			</a-col>
-			<!-- / Authors Table Column -->
-		</a-row>
-		<!-- / Authors Table -->
-
 		<!-- Projects Table -->
 		<a-row :gutter="24" type="flex">
 			<!-- Projects Table Column -->
@@ -33,127 +21,8 @@
 
 <script setup lang="ts">
 
-// "Authors" table component.
-import CardAuthorTable from '@/components/Cards/CardAuthorTable.vue'
 // "Projects" table component.
 import CardProjectTable2 from '@/components/Cards/CardProjectTable2.vue'
-
-// "Authors" table list of columns and their properties.
-const table1Columns = [
-	{
-		title: 'AUTHOR',
-		dataIndex: 'author',
-		slots: { customRender: 'author' },
-	},
-	{
-		title: 'FUNCTION',
-		dataIndex: 'func',
-		slots: { customRender: 'func' },
-	},
-	{
-		title: 'STATUS',
-		dataIndex: 'status',
-		slots: { customRender: 'status' },
-	},
-	{
-		title: 'EMPLOYED',
-		dataIndex: 'employed',
-		class: 'text-muted',
-	},
-	{
-		title: '',
-		slots: { customRender: 'editBtn' },
-		width: 50,
-	},
-];
-
-// "Authors" table list of rows and their properties.
-const table1Data = [
-	{
-		key: '1',
-		author: {
-			avatar: '/images/face-2.jpg',
-			name: 'Michael John',
-			email: 'michael@mail.com',
-		},
-		func: {
-			job: 'Manager',
-			department: 'Organization',
-		},
-		status: 1,
-		employed: '23/04/18',
-	},
-	{
-		key: '2',
-		author: {
-			avatar: '/images/face-3.jpg',
-			name: 'Alexa Liras',
-			email: 'alexa@mail.com',
-		},
-		func: {
-			job: 'Programator',
-			department: 'Developer',
-		},
-		status: 0,
-		employed: '23/12/20',
-	},
-	{
-		key: '3',
-		author: {
-			avatar: '/images/face-1.jpg',
-			name: 'Laure Perrier',
-			email: 'laure@mail.com',
-		},
-		func: {
-			job: 'Executive',
-			department: 'Projects',
-		},
-		status: 1,
-		employed: '13/04/19',
-	},
-	{
-		key: '4',
-		author: {
-			avatar: '/images/face-4.jpg',
-			name: 'Miriam Eric',
-			email: 'miriam@mail.com',
-		},
-		func: {
-			job: 'Marketing',
-			department: 'Organization',
-		},
-		status: 1,
-		employed: '03/04/21',
-	},
-	{
-		key: '5',
-		author: {
-			avatar: '/images/face-5.jpeg',
-			name: 'Richard Gran',
-			email: 'richard@mail.com',
-		},
-		func: {
-			job: 'Manager',
-			department: 'Organization',
-		},
-		status: 0,
-		employed: '23/03/20',
-	},
-	{
-		key: '6',
-		author: {
-			avatar: '/images/face-6.jpeg',
-			name: 'John Levi',
-			email: 'john@mail.com',
-		},
-		func: {
-			job: 'Tester',
-			department: 'Developer',
-		},
-		status: 0,
-		employed: '14/04/17',
-	},
-];
 
 // "Projects" table list of columns and their properties.
 const table2Columns = [
@@ -174,14 +43,9 @@ const table2Columns = [
 		class: 'font-semibold text-muted text-sm',
 	},
 	{
-		title: 'COMPLETION',
-		slots: { customRender: 'completion' },
-		dataIndex: 'completion',
-	},
-	{
-		title: '',
-		slots: { customRender: 'editBtn' },
-		width: 50,
+		title: 'EXEC',
+		slots: { customRender: 'editExec' },
+		width: 100,
 	},
 ];
 

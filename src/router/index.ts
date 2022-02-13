@@ -46,29 +46,29 @@ let routes: Array<RouteRecordRaw> = [
         },
         component: () => import('@/views/Billing.vue'),
     },
-    {
-        path: '/rtl',
-        name: 'RTL',
-        meta: {
-            layoutClass: 'dashboard-rtl',
-            layout: "dashboard-rtl",
-        },
-        component: () => import('@/views/RTL.vue'),
-    },
-    {
-        path: '/Profile',
-        name: 'Profile',
-        meta: {
-            layoutClass: 'layout-profile',
-            layout: "dashboard",
-        },
-        component: () => import('@/views/Profile.vue'),
-    },
-    {
-        path: '/sign-in',
-        name: 'Sign-In',
-        component: () => import('@/views/Sign-In.vue'),
-    },
+    // {
+    //     path: '/rtl',
+    //     name: 'RTL',
+    //     meta: {
+    //         layoutClass: 'dashboard-rtl',
+    //         layout: "dashboard-rtl",
+    //     },
+    //     component: () => import('@/views/RTL.vue'),
+    // },
+    // {
+    //     path: '/Profile',
+    //     name: 'Profile',
+    //     meta: {
+    //         layoutClass: 'layout-profile',
+    //         layout: "dashboard",
+    //     },
+    //     component: () => import('@/views/Profile.vue'),
+    // },
+    // {
+    //     path: '/sign-in',
+    //     name: 'Sign-In',
+    //     component: () => import('@/views/Sign-In.vue'),
+    // },
     {
         path: '/sign-up',
         name: 'Sign-Up',
@@ -76,6 +76,14 @@ let routes: Array<RouteRecordRaw> = [
             layoutClass: 'layout-sign-up',
         },
         component: () => import('@/views/Sign-Up.vue'),
+    },
+    {
+        path: '/shell',
+        name: 'Shell',
+        meta: {
+            layoutClass: 'layout-shell',
+        },
+        component: () => import('@/components/Shells/Shell.vue'),
     },
 ]
 

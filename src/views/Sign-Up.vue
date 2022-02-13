@@ -9,9 +9,6 @@
     <div class="sign-up-header" style="background-image: url('/images/bg-signup.jpg')">
       <div class="content">
         <h1 class="mb-5">Sign Up</h1>
-        <p class="text-lg">
-          Use these awesome forms to login or create new account in your project for free.
-        </p>
       </div>
     </div>
     <!-- / Sign Up Image And Headings -->
@@ -23,20 +20,8 @@
       :bodyStyle="{ paddingTop: 0 }"
     >
       <template #title>
-        <h5 class="font-semibold text-center">Register With</h5>
+        <h5 class="font-semibold text-center">Register</h5>
       </template>
-      <div class="sign-up-gateways">
-        <a-button>
-          <img src="/images/logos/logos-facebook.svg" />
-        </a-button>
-        <a-button>
-          <img src="/images/logos/logo-apple.svg" />
-        </a-button>
-        <a-button>
-          <img src="/images/logos/Google__G__Logo.svg.png" />
-        </a-button>
-      </div>
-      <p class="text-center my-25 font-semibold text-muted">Or</p>
       <a-form
         id="components-form-demo-normal-login"
         class="login-form"
